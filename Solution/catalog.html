@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta charset="UTF-8">
+   <head>
+		
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+				
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<script src="js/start.js"></script> 
+		<script src="js/catalog.js"></script> 
+		
+		<!--Данный скрипт используется для отображение общей цены за товары в части - header. -->
+		<script src="js/displayItemPrice.js"></script> 
+	
+		<link rel="stylesheet" href="css/catalog.css"> 
+		
+		
+		
+		<title>catalog</title>
+   </head>
+
+   <body>
+	<div id="size">123 </div>
+	
+	<div class="all">
+	
+			<div class="head">
+					<div class="head_top">
+						<h2 onClick="goToStart(); return false;">Template</h2>
+						
+						<ul class="head-top_ul-mail">
+							<li><a href="#0">E-mail sing up</a></li>
+							<li class="glyphicon glyphicon-lock glyphicon-xs"></li>
+							<li class="boldweight"><a href="shopping_bag.html">Bag</a><span class="header-basket-price"></span><span class="header-basket-count"></span></li>
+						</ul>
+					</div>
+					<div class="head_bot">
+						<ul class="head_bot_ul-links">
+							<li><a href="catalog.html">Women</a></li>
+							<li><a href="catalog.html">Men</a></li>
+							<li><a href="catalog.html">Handbags</a></li>
+							<li><a href="catalog.html">Accessories</a></li>
+							<li><a href="catalog.html">Sale</a></li>
+							<li><a href="catalog.html">New Arrivals</a></li>
+							<li><a href="catalog.html">Clearance</a></li>
+							<li><a href="catalog.html">Store Locator</a></li>
+						</ul>
+						 <div class="head_search">
+							<input type="search" placeholder="Style Name">
+						 </div>
+						 <div class="head_search-tablet">
+							<input type="search">
+						 </div>
+						 
+					</div>
+					<div class="mobile-head">
+						<div class="mobile-head_left"> 
+							<span><a href="#0" onclick="goToStart(); return false;">TL</a></span> 
+							<span class="boldweight"><a href="shopping_bag.html">Bag</a><span class="header-basket-price"></span><span class="header-basket-count"></span></span>
+						</div>
+						<div class="mobile-head_right">
+							<input id="dropDownBut" class="left-btn-drop mobile-head-button" type="image" onClick="hideShowDiv(); return false;" src="images/start-mobile-menu.png">
+							
+							
+						</div>
+						
+						<div class="mobile-menu-area">
+							<ul class="ul-mobile-list">
+								<li><a href="catalog.html">Women</a></li>
+								<li><a href="catalog.html">Men</a></li>
+								<li><a href="catalog.html">Handbags</a></li>
+								<li><a href="catalog.html">Accessories</a></li>
+								<li><a href="catalog.html">Sale</a></li>
+								<li><a href="catalog.html">New Arrivals</a></li>
+								<li><a href="catalog.html">Clearance</a></li>
+								<li><a href="catalog.html">Store Locator</a></li>
+								<li>
+									<div class="head_search-mobile" >
+										<input type="search" placeholder="Style Name">
+									</div>	
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+			</div>
+			
+			
+			<div class="underhead_option">
+						
+				<div class="underhead_fashion" >
+					<ul class="">
+					 <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						 <div class="line-height-word2 margin-left-60" style="margin-left:60px;">Fashion<div class="color-red line-height-low" >Casual style</div></div><span class="caret caret-fashion"></span>
+						</a>
+						<ul class="dropdown-menu">
+						 drop down content
+						</ul>
+					  </li>
+					</ul>
+				</div>
+								
+				<div class="underhead_product">
+					<ul class="">
+					 <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						 <div class="line-height-word1 marg-left20">Product type</div><span class="caret caret-product"></span>
+						</a>
+						<ul class="dropdown-menu">
+						 drop down content2
+						</ul>
+					  </li>
+					</ul>
+				</div>
+				
+				<div class="underhead_color">
+					<ul class="">
+					 <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<div class="line-height-word1 marg-left20">Color</div><span class="caret caret-color"></span>
+						</a>
+						<ul class="dropdown-menu">
+						 drop down content3
+						</ul>
+					  </li>
+					</ul>
+				</div>
+				
+				
+				<div class="underhead__brand">
+					<ul class="">
+					 <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<div class="line-height-word2 marg-left20">Brand<div class="color-red line-height-low">Antipodium</div></div>
+						<span class="caret caret-brand"></span>
+						</a>
+						<ul class="dropdown-menu">
+						 drop down content4
+						</ul>
+					  </li>
+					</ul>
+				</div>
+				
+				<div class="underhead_size">
+					<ul class="">
+					 <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<div class="line-height-word2 marg-left20">Size<div class="color-red line-height-low">UK 18</div></div>
+						<span class="caret caret-size"></span>
+						</a>
+						<ul class="dropdown-menu">
+						 drop down content5
+						</ul>
+					  </li>
+					</ul>
+				</div>
+				
+				<div class="underhead_price">
+					<ul class="">
+					 <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<div class="line-height-word1 marg-left20">Price range</div><span class="caret caret-price"></span>
+						</a>
+						<ul class="dropdown-menu">
+						 drop down content6
+						</ul>
+					  </li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			
+			<div class="underhead_option-tablet">
+				<ul class="">
+					 <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<div class="underhead_option-tablet-list"> <span class="color-red">Casual Style,</span> Product type, Color,
+							<span class="color-red"> Antipodium, UK 18,</span> Price range  </div><span class="caret caret-tablet"></span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-tablet">
+						 tablet dropw-down
+						</ul>
+					 </li>
+				</ul>
+			</div>
+			
+			<div class="underhead_option-mobile">
+				<ul class="">
+					 <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<div class="underhead_option-mobile-list"> <span class="color-red">Casual Style,</span> Product type, Color,
+							<span class="color-red"> Antipodium</span>  </div><span class="caret caret-mobile"></span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-tablet">
+						 tablet dropw-down
+						</ul>
+					 </li>
+				</ul>
+			</div>
+		
+		
+			<div class="main-block" >
+				 <div class="row " id="before">
+					<div class="col-xs-6 col-sm-6 col-md-6 catalog-img" data-id="1"><img src="images\catalog\catalog1.jpg" alt=""> <div class="catalog-img_text"><div class="description">Only Skinny Jeans</div>£<span class="price">65.50</span></div>  </div>
+				  </div>
+				  <div class="row catalog-text">
+					<div class="col-xs-24"> <center><div class="catalog-discount-text1"><b>Last weekend <span class="color-red">extra 50%</span> off on all reduced boots and shoulder bags</b></div><br> <div class="catalog-discount-text2"><i>This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</i></div></center> </div>
+				  </div>
+				  <div class="row " id="after">
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="2"><img  src="images\catalog\catalog2.jpg"  alt="">  <div class="catalog-img_text"><div class="description">Neck Knitted Jumper</div>£<span class="price">76.25</span></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="3"><img  src="images\catalog\catalog3.jpg"  alt="">  <div class="catalog-img_text"><div class="description">Turtle Neck Jumper in Rib</div>£<span class="price">130.25 </span><span><i class="color-grey">New</i></span></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="4"><img  src="images\catalog\catalog4.jpg"  alt="">  <div class="catalog-img_text"><div class="description">With Patchwork Crochet</div>£<span class="price">80.60</span></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="5"><img  src="images\catalog\catalog5.jpg"  alt="">  <div class="catalog-img_text"><div class="description">Levi's Jeans for women</div><div class="color-grey">More colors</div></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="6"><img  src="images\catalog\catalog6.jpg"  alt="">  <div class="catalog-img_text"><div class="description">Boyfriend T-Shirt with Bohemian Print</b></div><div ><span class="color-grey">£120.00-25% &nbsp; &nbsp;</span> £<span class="price">90.00</span></div></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="7"><img  src="images\catalog\catalog7.jpg"  alt="">  <div class="catalog-img_text"><div class="description">Color Block</div>£<span class="price">550.50</span></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="8"><img  src="images\catalog\catalog8.jpg"  alt="">  <div class="catalog-img_text"><div class="description">Monki Festival knitted</div>£<span class="price">24.75</span></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="9"><img  src="images\catalog\catalog9.jpg"  alt="">  <div class="catalog-img_text"><div class="description">Oversized Cardigan</div>£<span class="price">90.00</span></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="10"><img  src="images\catalog\catalog10.jpg"  alt="">  <div class="catalog-img_text"><div class="description">Paul & Joe Sister Jumper with Neon Trims</div>£<span class="price">19.75</span><span> <i class="color-grey">New</i></span></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="11"><img  src="images\catalog\catalog11.jpg"  alt="">  <div class="catalog-img_text"><div class="description">Only Skinny Jeans</div>£<span class="price">65.50</span></div>  </div>
+					<div class="col-xs-6 col-sm-8 col-md-6 catalog-img" data-id="12"><img  src="images\catalog\catalog12.jpg" alt="">  <div class="catalog-img_text"><div class="description">Only Skinny Jeans</div>£<span class="price">65.50</span></div>  </div>
+				  </div>
+			</div>
+			
+			<div class="all-arrivals" >
+				<a href="#0" class="button15" >Show more</a>
+			</div>
+			
+			<div class="bottom-catalog">
+				
+					<div class="col-xs-16 col-md-12 "><img class="bottom-catalog_img bottom-catalog_img1" src="images\catalog\adidas.jpg"  alt=""> </div>
+					<div class="col-xs-8  col-md-6"><img class="bottom-catalog_img bottom-catalog_img2" src="images\catalog\jeans.jpg"  alt=""> </div>
+					<div class="col-xs-15 col-md-6"><img class="bottom-catalog_img" src="images\catalog\bag.jpg"  alt=""> </div>
+					
+			</div>
+			
+			
+			
+			
+			
+			<div class="contact-block">
+				<div class="contact-block_inner1">
+				
+					<ul class="contact-block_ul-1">
+						<li><a href="#0">Quick Links</a></li>
+						<li><a href="#0">Store locator</a></li>
+						<li><a href="#0">Gift cards</a></li>
+						<li><a href="#0">Size guide</a></li>
+						<li><a href="#0">About us</a></li>
+						<li><a href="#0">Support</a></li>
+					</ul>
+					
+					<ul class="contact-block_ul-2">
+						<li><a href="#0">Customer Care</a></li>
+						<li><a href="#0">Customer service</a></li>
+						<li><a href="#0">Track my order</a></li>
+						<li><a href="#0">Return policy</a></li>
+						<li><a href="#0">Shipping & delivery</a></li>
+						<li><a href="#0">Contact us</a></li>
+						<li><a href="#0">Careers</a></li>
+					</ul>
+					
+				</div>
+				
+				<div class="contact-block_inner2">
+					<div class="contact-block_inner2_mobile">
+						<div class="contact-block2_quetion">
+							<div>Quetions</div>
+							<div>  <div class="twitter-icon"></div> Tweet us <b>@template</b></div>
+						</div>
+						<div class="mobile-partition"></div>
+						<div class="contact-block2_order">
+							<div>Order by phone</div>
+							<div>8-800-409-47-12</div>
+						</div>
+					</div>
+					<div class="contact-block_inner2_mobile2"> </div>
+					<div class="contact-block2_text">
+					<i>We have our own delivery service which
+					operates in 23 major European cities. Delivery
+					time-3-5 days.</i>
+					</div>
+					
+					<div class="contact-block2_social">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+							
+			</div>
+			
+			<div class="footer">
+				<div class="footer_data"><b>© 2010-2015, The template Group inc.</b></div>
+				<div class="footer_share"><b>Share</b> <div>1 437</div> </div>
+				<div class="footer_links">
+					<ul>
+						<li><a href="#0"><b>Legal notice</b></a></li>
+						<li><a href="#0"><b>Privace policy</b></a></li>
+						<li><a href="#0"><b>site map</b></a></li>
+					</ul>
+				</div>
+			</div>	
+			
+			
+		
+	</div>
+	
+	
+	
+	
+  </body>
+ 
+</html>
+

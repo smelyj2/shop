@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta charset="UTF-8">
+   <head>
+		
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+				
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<script src="js/start.js"></script> 
+		<script src="js/item.js"></script> 
+		
+		<!--Данный скрипт используется для отображение общей цены за товары в части - header. -->
+		<script src="js/displayItemPrice.js"></script> 
+		
+		<link rel="stylesheet" href="css/item_details_page.css"> 
+		
+		
+		
+		<title>item</title>
+   </head>
+
+   <body>
+	<div id="size">123 </div>
+	
+	<div class="all">
+	
+			<div class="head">
+					<div class="head_top">
+						<h2 onClick="goToStart(); return false;">Template</h2>
+						
+						<ul class="head-top_ul-mail">
+							<li><a href="#0">E-mail sing up</a></li>
+							<li class="glyphicon glyphicon-lock glyphicon-xs"></li>
+							<li class="boldweight"><a href="shopping_bag.html">Bag</a><span class="header-basket-price"></span><span class="header-basket-count"></span></li>
+						</ul>
+					</div>
+					<div class="head_bot">
+						<ul class="head_bot_ul-links">
+							<li><a href="catalog.html">Women</a></li>
+							<li><a href="catalog.html">Men</a></li>
+							<li><a href="catalog.html">Handbags</a></li>
+							<li><a href="catalog.html">Accessories</a></li>
+							<li><a href="catalog.html">Sale</a></li>
+							<li><a href="catalog.html">New Arrivals</a></li>
+							<li><a href="catalog.html">Clearance</a></li>
+							<li><a href="catalog.html">Store Locator</a></li>
+						</ul>
+						 <div class="head_search">
+							<input type="search"placeholder="Style Name">
+						 </div>
+						 <div class="head_search-tablet">
+							<input type="search">
+						 </div>
+						 
+					</div>
+					<div class="mobile-head">
+						<div class="mobile-head_left"> 
+							<span><a href="#0" onclick="goToStart(); return false;">TL</a></span> 
+							<span class="boldweight"><a href="shopping_bag.html">Bag</a><span class="header-basket-price"></span><span class="header-basket-count"></span></span>
+						</div>
+						<div class="mobile-head_right">
+							<input id="dropDownBut" class="left-btn-drop mobile-head-button" type="image" onClick="hideShowDiv(); return false;" src="images/start-mobile-menu.png">
+							
+							
+						</div>
+						
+						<div class="mobile-menu-area">
+							<ul class="ul-mobile-list">
+								<li><a href="#0">Women</a></li>
+								<li><a href="#0">Men</a></li>
+								<li><a href="#0">Handbags</a></li>
+								<li><a href="#0">Accessories</a></li>
+								<li><a href="#0">Sale</a></li>
+								<li><a href="#0">New Arrivals</a></li>
+								<li><a href="#0">Clearance</a></li>
+								<li><a href="#0">Store Locator</a></li>
+								<li>
+									<div class="head_search-mobile" >
+										<input type="search"placeholder="Style Name">
+									</div>	
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+			</div>
+			
+			<div class="main-title-block">
+				<div class="main-title"> <a href="#0" onClick="goToCatalog(); return false;">< Back to catalog</a></div>
+			</div>
+			
+			<div class="main-block">
+				<div class="col-md-24 photo_switcher">
+					<div id="bigbox" class="photo_switcher-big">
+						<div id="zoom">
+						</div>
+					</div>
+					<div class="photo_switcher-small" ></div>
+					<div id="infoBox" ></div>
+				</div>
+				
+				<div class="col-md-24 main-photo-settings">
+					<div class="item-name"></div>
+					<div class="price-line">£ <span class="item-price"></span></div>
+					<div class="item-description"><i>Featuring fine Italian woof, this elegant suit pick-stitch edging, cascade buttons at the cuffs and a subtle stripe pattern throughout.</i></div>
+					<div class="main-photo-settings_buttons">
+						<div class="size-header">Size</div>
+												
+												
+						<div class="size-tabs">
+						  <div class="tab-size" >
+							<input type="radio" id="tab1-size" name="group1" value="1" checked>
+							<label for="tab1-size">
+							  <span>UK 52</span>
+							</label>
+						 </div>
+
+						  <div class="tab-size">
+							<input type="radio" id="tab2-size" name="group1" value="2">
+							<label for="tab2-size">
+							  <span>UK 54</span>
+							</label>
+						  </div>
+
+						  <div class="tab-size"  >
+							<input type="radio" id="tab3-size" name="group1" value="3">
+							<label for="tab3-size">
+							  <span>UK 56</span>
+							</label>
+						  </div>
+						</div>
+						
+						
+						<div class="color-header">Color</div>
+						
+						<div class="color-tabs">
+						  <div class="tab-color" >
+							<input type="radio" id="tab1-color" name="group2" value="1" >
+							<label for="tab1-color">
+							  <span>Black</span>
+							</label>
+						 </div>
+
+						  <div class="tab-color">
+							<input type="radio" id="tab2-color" name="group2" value="2" checked>
+							<label for="tab2-color">
+							  <span>Blue</span>
+							</label>
+						  </div>
+						</div>
+											
+						
+					</div>
+				</div>				
+			</div>
+			
+			
+			
+			<div class="all-arrivals">
+				<a href="#0" class="button15" >Add to bag</a>
+			</div>
+			
+			<div class="bottom-catalog">
+				
+					<div class="col-xs-12 col-md-12 "><img class="bottom-catalog_img bottom-catalog_img1" src="images\catalog\adidas.jpg"  alt=""> </div>
+					<div class="col-xs-6  col-md-6"><img class="bottom-catalog_img bottom-catalog_img2" src="images\catalog\jeans.jpg"  alt=""> </div>
+					<div class="col-xs-6 col-md-6"><img class="bottom-catalog_img" src="images\catalog\bag.jpg"  alt=""> </div>
+					
+			</div>
+			
+			
+			
+			
+			
+			<div class="contact-block">
+				<div class="contact-block_inner1">
+				
+					<ul class="contact-block_ul-1">
+						<li><a href="#0">Quick Links</a></li>
+						<li><a href="#0">Store locator</a></li>
+						<li><a href="#0">Gift cards</a></li>
+						<li><a href="#0">Size guide</a></li>
+						<li><a href="#0">About us</a></li>
+						<li><a href="#0">Support</a></li>
+					</ul>
+					
+					<ul class="contact-block_ul-2">
+						<li><a href="#0">Customer Care</a></li>
+						<li><a href="#0">Customer service</a></li>
+						<li><a href="#0">Track my order</a></li>
+						<li><a href="#0">Return policy</a></li>
+						<li><a href="#0">Shipping & delivery</a></li>
+						<li><a href="#0">Contact us</a></li>
+						<li><a href="#0">Careers</a></li>
+					</ul>
+					
+				</div>
+				
+				<div class="contact-block_inner2">
+					<div class="contact-block_inner2_mobile">
+						<div class="contact-block2_quetion">
+							<div>Quetions</div>
+							<div>  <div class="twitter-icon"></div> Tweet us <b>@template</b></div>
+						</div>
+						<div class="mobile-partition"></div>
+						<div class="contact-block2_order">
+							<div>Order by phone</div>
+							<div>8-800-409-47-12</div>
+						</div>
+					</div>
+					<div class="contact-block_inner2_mobile2"> </div>
+					<div class="contact-block2_text">
+					<i>We have our own delivery service which
+					operates in 23 major European cities. Delivery
+					time-3-5 days.</i>
+					</div>
+					
+					<div class="contact-block2_social">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+							
+			</div>
+			
+			<div class="footer">
+				<div class="footer_data"><b>© 2010-2015, The template Group inc.</b></div>
+				<div class="footer_share"><b>Share</b> <div>1 437</div> </div>
+				<div class="footer_links">
+					<ul>
+						<li><a href="#0"><b>Legal notice</b></a></li>
+						<li><a href="#0"><b>Privace policy</b></a></li>
+						<li><a href="#0"><b>site map</b></a></li>
+					</ul>
+				</div>
+			</div>	
+			
+			
+		
+	</div>
+	
+
+	
+	
+  </body>
+ 
+</html>
+

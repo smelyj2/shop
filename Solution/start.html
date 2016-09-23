@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta charset="UTF-8">
+   <head>
+		
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+				
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<script src="js/start.js"></script> 
+		<!--Данный скрипт используется для отображение общей цены за товары в части - header. -->
+		<script src="js/displayItemPrice.js"></script> 
+		
+		<link rel="stylesheet" href="css/start.css"> 
+		
+		
+		
+		<title>magazine</title>
+   </head>
+
+   <body>
+   <div id="size"> </div>
+		<div class="all">
+			<div class="head">
+				<div class="head_top">
+					<h2>Template</h2>
+					
+					<ul class="head-top_ul-mail">
+						<li><a href="#0">E-mail sing up</a></li>
+						<li class="glyphicon glyphicon-lock glyphicon-xs"></li>
+						<li class="boldweight"><a href="shopping_bag.html">Bag</a><span class="header-basket-price"></span><span class="header-basket-count"></span></li>
+					</ul>
+				</div>
+				<div class="head_bot">
+					<ul class="head_bot_ul-links">
+						<li><a href="catalog.html">Women</a></li>
+						<li><a href="catalog.html">Men</a></li>
+						<li><a href="catalog.html">Handbags</a></li>
+						<li><a href="catalog.html">Accessories</a></li>
+						<li><a href="catalog.html">Sale</a></li>
+						<li><a href="catalog.html">New Arrivals</a></li>
+						<li><a href="catalog.html">Clearance</a></li>
+						<li><a href="catalog.html">Store Locator</a></li>
+					</ul>
+					 <div class="head_search">
+						<input type="search" placeholder="Style Name">
+					 </div>
+					 <div class="head_search-tablet">
+						<input type="search">
+					 </div>
+					 
+				</div>
+				<div class="mobile-head">
+					<div class="mobile-head_left"> 
+						<span><a href="#0">TL</a></span> 
+						<span class="boldweight"><a href="shopping_bag.html">Bag</a><span class="header-basket-price"></span><span class="header-basket-count"></span></span>
+					</div>
+					<div class="mobile-head_right">
+						<input id="dropDownBut" class="left-btn-drop mobile-head-button" type="image" onClick="hideShowDiv(); return false;" src="images/start-mobile-menu.png">
+						
+						
+					</div>
+					
+					<div class="mobile-menu-area">
+						<ul class="ul-mobile-list">
+							<li><a href="catalog.html">Women</a></li>
+							<li><a href="catalog.html">Men</a></li>
+							<li><a href="catalog.html">Handbags</a></li>
+							<li><a href="catalog.html">Accessories</a></li>
+							<li><a href="catalog.html">Sale</a></li>
+							<li><a href="catalog.html">New Arrivals</a></li>
+							<li><a href="catalog.html">Clearance</a></li>
+							<li><a href="catalog.html">Store Locator</a></li>
+							<li>
+								<div class="head_search-mobile" >
+									<input type="search" placeholder="Style Name">
+								</div>	
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+						
+			
+			<div >
+				<div class="row otstup">  
+					
+					<div class="col-md-24 col-lg-24">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+						  <!-- Маркеры слайдов -->
+						  <ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+						  </ol>
+		 
+						  <!-- Содержимое слайдов -->
+						  <div class="carousel-inner">
+							<div class="item active">
+							  <img class="mySliderImg" src="images/slider1.png" alt="" onClick="goToCatalog();return false;">
+							  <div class="carousel-caption">
+								
+							  </div>
+							</div>
+							 
+							<div class="item">
+							  <img class="mySliderImg" src="images/slider2.png" alt=""  onClick="goToCatalog();return false;">
+							  <div class="carousel-caption">
+								
+							  </div>
+							</div>
+							 
+						
+						  </div>
+		 
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+							
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+							
+						  </a>
+						</div>
+		 
+					</div>
+				</div>
+			</div>
+			
+			<div class="undrslider-photo">
+				<div class="undrslider-photo-1">
+					
+
+				</div>
+				
+				<div class="undrslider-photo-2">
+				
+				</div>
+			</div>
+			
+			<div class="arrivals">
+				<span >New arrivals</span>
+			</div>
+			
+			<div class="main-clothes">
+				<ul class="main-clothes_ul">
+					<li >
+						<div class="clothes-photo1 clothesImg"></div>
+						<div class="clothes-content1">
+							<div><b>Straight Leg Jeans</b></div>
+							<div>£55.00</div>
+						</div>
+					</li>
+					<li>
+						<div class="clothes-photo2 clothesImg"></div>
+						<div class="clothes-content2">
+							<div><b>Boyfriend T-Shirt with</b></div>
+							<div ><b>Bohemian Print</b></div>
+							<div>£34.25</div>
+						</div>
+					</li>
+					<li>
+						<div class="clothes-photo3 clothesImg"></div>
+						<div class="clothes-content3">
+							<div><b>Only Busted Knee jean</b></div>
+							<div>£140.50</div>
+						</div>
+					</li>
+					<li>
+						<div class="clothes-photo4 clothesImg"></div>
+						<div class="clothes-content4">
+							<div><b>Only Skinny Jeans</b></div>
+							<div>£12.75</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="all-arrivals" onClick="goToCatalog(); return false;">
+				<a href="#0" class="button15" >All arrivals</a>
+			</div>
+			
+			
+			<div class="contact-block">
+				<div class="contact-block_inner1">
+				
+					<ul class="contact-block_ul-1">
+						<li><a href="#0">Quick Links</a></li>
+						<li><a href="#0">Store locator</a></li>
+						<li><a href="#0">Gift cards</a></li>
+						<li><a href="#0">Size guide</a></li>
+						<li><a href="#0">About us</a></li>
+						<li><a href="#0">Support</a></li>
+					</ul>
+					
+					<ul class="contact-block_ul-2">
+						<li><a href="#0">Customer Care</a></li>
+						<li><a href="#0">Customer service</a></li>
+						<li><a href="#0">Track my order</a></li>
+						<li><a href="#0">Return policy</a></li>
+						<li><a href="#0">Shipping & delivery</a></li>
+						<li><a href="#0">Contact us</a></li>
+						<li><a href="#0">Careers</a></li>
+					</ul>
+					
+				</div>
+				
+				<div class="contact-block_inner2">
+					<div class="contact-block_inner2_mobile">
+						<div class="contact-block2_quetion">
+							<div>Quetions</div>
+							<div>  <div class="twitter-icon"></div> Tweet us <b>@template</b></div>
+						</div>
+						<div class="mobile-partition"></div>
+						<div class="contact-block2_order">
+							<div>Order by phone</div>
+							<div>8-800-409-47-12</div>
+						</div>
+					</div>
+					<div class="contact-block_inner2_mobile2"> </div>
+					<div class="contact-block2_text">
+					<i>We have our own delivery service which
+					operates in 23 major European cities. Delivery
+					time-3-5 days.</i>
+					</div>
+					
+					<div class="contact-block2_social">
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+							
+			</div>
+			
+			<div class="footer">
+				<div class="footer_data"><b>© 2010-2015, The template Group inc.</b></div>
+				<div class="footer_share"><b>Share</b> <div>1 437</div> </div>
+				<div class="footer_links">
+					<ul>
+						<li><a href="#0"><b>Legal notice</b></a></li>
+						<li><a href="#0"><b>Privace policy</b></a></li>
+						<li><a href="#0"><b>site map</b></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		
+  </body>
+ 
+</html>
+
